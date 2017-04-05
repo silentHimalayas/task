@@ -8,8 +8,7 @@
 <script>
   // let hello = require('components／Hello')
   // let content = require('components／num')
-  // export default {
-  //   name: 'index',
-  //   component: {hello, content}
-  // }
+  export default {
+    name: 'index'
+  }
 </script>

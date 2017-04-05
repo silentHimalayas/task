@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
+// import Hello from '@/components/Hello'
 // import num from '@/components/num'
-// import Index from '@/components/Index'
+import Index from '@/components/Index'
 
 Vue.use(Router)
 
@@ -13,7 +13,6 @@ export default new Router({
       name: 'index',
       component: Index
     }
-    // ,
     // {
     //   path: '/hello',
     //   name: 'hello',
