@@ -1,28 +1,37 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import Hello from '@/components/Hello'
-// import num from '@/components/num'
-import Index from '@/components/Index'
+import VueResource from 'vue-resource'
+import ElementUI from 'element-ui'
+import Nav from '@/components/Nav'
+import List from '@/components/List'
+import Login from '@/components/Login'
+import Hello from '@/components/Hello'
 
 Vue.use(Router)
-
+Vue.use(VueResource)
+Vue.use(ElementUI)
 export default new Router({
   routes: [
     {
+      path: '/login',
+      name: 'login',
+      component: Login
+    },
+    {
       path: '/',
-      name: 'index',
-      component: Index
+      name: 'hello',
+      component: Hello
+    },
+    {
+      path: '/list',
+      name: 'list',
+      component: List
+    },
+    {
+      path: '/nav',
+      name: 'nav',
+      component: Nav
     }
-    // {
-    //   path: '/hello',
-    //   name: 'hello',
-    //   component: Hello
-    // },
-    // {
-    //   path: '/num',
-    //   name: 'num',
-    //   component: num
-    // }
   ]
 
 })

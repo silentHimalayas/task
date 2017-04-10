@@ -1,11 +1,11 @@
 <template>
   <div>
-    this is content
+    {{hello}}
   </div>
 </template>
 <script>
   export default{
-    name: 'num',
+    name: 'list',
     data () {
       return {
         hello: 'ni shi zhu me '
